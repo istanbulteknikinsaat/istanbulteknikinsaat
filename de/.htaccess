@@ -1,0 +1,33 @@
+ErrorDocument 404 /tr/404.php
+
+# To externally redirect /dir/haberler.php?id=123&title=456 to /dir/123/456
+RewriteCond %{THE_REQUEST} ^GET\s([^.]+)\.php\?id=([a-zA-Z0-9_-]+)&slug=([a-zA-Z0-9_-]+) [NC]
+RewriteRule ^ %1/%2/%3? [R,L]
+
+# To internally forward /dir/cozumler/12/yapıkoruma to /dir/index.php?id=12&slug='yapıkoruma'
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/([^/]+)(/[^/]+)(/[^/]+)?/?$ $1.php?id=$2&slug=$3 [L,QSA]
+
+# To externally redirect /dir/cozumler.php?id=123&name='yapıkoruma' to /dir/123/yapıkoruma
+RewriteCond %{THE_REQUEST} ^GET\s([^.]+)\.php\?id=([a-zA-Z0-9_-]+)&name=([a-zA-Z0-9_-]+)&iliski=([a-zA-Z0-9_-]+) [NC]
+RewriteRule ^ %1/%2/%3/%4? [R,L]
+
+# To externally redirect /dir/cozumler.php?id=123&name='yapıkoruma' to /dir/123/yapıkoruma
+RewriteCond %{THE_REQUEST} ^GET\s([^.]+)\.php\?id=([a-zA-Z0-9_-]+)&name=([a-zA-Z0-9_-]+) [NC]
+RewriteRule ^ %1/%2/%3? [R,L]
+
+
+# To externally redirect /dir/cozumler.php?id=123&name='yapıkoruma' to /dir/123/yapıkoruma
+RewriteCond %{THE_REQUEST} ^GET\s([^.]+)\.php\?lang=([a-zA-Z0-9_-]+) [NC]
+RewriteRule ^ /%2? [R,L]
+
+# To externally redirect /dir/index.php to /dir/index
+RewriteCond %{THE_REQUEST} ^GET\s([^.]+)\.php\s [NC]
+RewriteRule ^ %1 [R,L]
+
+# To internally forward /dir/index to /dir/index.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*?)/?$ $1.php [L]

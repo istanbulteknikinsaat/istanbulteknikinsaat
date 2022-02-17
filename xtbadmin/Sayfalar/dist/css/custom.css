@@ -1,0 +1,6 @@
+/* ONLY PC */
+@media screen and (min-width: 1024px) {
+	.content-title{
+        float: left;
+    }
+}

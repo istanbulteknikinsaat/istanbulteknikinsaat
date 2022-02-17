@@ -1,0 +1,8 @@
+ErrorDocument 404 /tr/404.php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ index.php [NC,L]
+
+
+Redirect https://www.istanbulteknik.com/tr/geosentetikler/geogrid/fortex-gt-orgulu-geotekstilleri https://www.istanbulteknik.com/tr/urunler/9/geotekstiller

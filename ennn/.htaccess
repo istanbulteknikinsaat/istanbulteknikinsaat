@@ -1,0 +1,117 @@
+﻿
+
+
+
+
+
+
+
+
+
+RewriteRule ^system/([0-9a-zA-Z-_]+)(/?)$ /en/system/$1.php [L,QSA]
+
+
+
+
+################################################
+################################################
+#### ENGLISH ###################################
+################################################
+################################################
+
+# RewriteRule default.asp /en/index.php  [R=301,L]
+# RewriteRule Urunlerimiz.aspx /en/Urunlerimiz.php?id=$1  [R=301,L,QSA]
+# RewriteRule Hakkimizda.aspx /en/about  [R=301,L]
+# RewriteRule Iletisim.aspx /en/contact  [R=301,L]
+# RewriteRule Referanslar.aspx /en/references  [R=301,L]
+# RewriteRule IletisimFormu.aspx /en/contact  [R=301,L]
+# RewriteRule BayiBasvuruFormu.aspx /en/contact  [R=301,L]
+# RewriteRule UrunDetay.aspx /en/UrunDetay.php?id=$1  [R=301,L,QSA]
+# RewriteRule Kariyer.aspx /en/contact  [R=301,L]
+# RewriteRule Haberler.aspx /en/Haberler.php?Tip=$1  [R=301,L,QSA]
+# RewriteRule Kataloglar.aspx /en/index.php  [R=301,L]
+# RewriteRule Urunler.aspx /en/Urunler.php?id=$1  [R=301,L,QSA]
+# RewriteRule Cozumlerimiz.aspx /en/references  [R=301,L]
+# RewriteRule Urunlerimiz.aspx /en/Urunlerimiz.php?id=$1  [R=301,L,QSA]
+# RewriteRule Markalar.aspx /en/Markalar.php?id=$1  [R=301,L,QSA]
+# RewriteRule Departman.aspx /en/about  [R=301,L]
+# RewriteRule MaliTablolar.aspx /en/about  [R=301,L]
+# RewriteRule HaberDetay.aspx /en/HaberDetay.php?id=$1  [R=301,L,QSA]
+# RewriteRule TeklifIstiyorumFormu.aspx /en/contact  [R=301,L]
+# RewriteRule Sayfa.aspx /en/Sayfa.php?url=$1  [R=301,L,QSA]
+# RewriteRule Uygulamalar.aspx /en/index.php  [R=301,L]
+
+RewriteRule ^news/coverex-expansion-joint-profiles-are-at-vodafone-arena-istanbul  /news/coverex-expansion-joint-profiles-are-at-vodafone-stadium-istanbul  [R=301,L,QSA]
+
+
+RewriteRule ^news/([0-9a-zA-Z-_]+)(/?)$$  /en/news-detail.php?newsid=$1 [L,QSA]
+RewriteRule ^news  /en/all-news.php [L,QSA]
+
+
+RewriteRule ^geosynthetics/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/geosynthetics/$1/$2.php [L,QSA]
+RewriteRule ^insulation-products/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/insulation-products/$1/$2.php [L,QSA]
+RewriteRule ^insulation-products/drainage-board/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/insulation-products/drainage-board/$1/$2.php [L,QSA]
+RewriteRule ^insulation-products/insulating-products/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/insulation-products/insulating-products/$1/$2.php [L,QSA]
+RewriteRule ^insulation-products/roof-and-facade-underlays/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/insulation-products/roof-and-facade-underlays/$1/$2.php [L,QSA]
+RewriteRule ^geogreen-green-roof-systems/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/geogreen-green-roof-systems/$1/$2.php [L,QSA]
+RewriteRule ^asphalt-products/([0-9a-zA-Z-_]+)(/?)$$  /en/products/asphalt-products/$1.php [L,QSA]
+RewriteRule ^concrete-products/([0-9a-zA-Z-_]+)(/?)$$  /en/products/concrete-products/$1.php [L,QSA]
+RewriteRule ^marble-products/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$$  /en/products/marble-products/$1/$2.php [L,QSA]
+
+
+
+RewriteRule ^system/([0-9a-zA-Z-_]+)(/?)$ /en/system/$1.php [L,QSA]
+
+
+
+RewriteRule ^expansion-joint-profiles/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=$1&cat2=$2&name=$3 [L,QSA]
+RewriteRule ^expansion-joint-profiles/floor-expansion-joint-profiles(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=floor-expansion-joint-profiles&cat2=flush-mounted&name=ZA040-3070 [L,QSA]
+RewriteRule ^expansion-joint-profiles/wall-expansion-joint-profiles(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=wall-expansion-joint-profiles&cat2=flush-mounted&name=DA020-3015 [L,QSA]
+RewriteRule ^expansion-joint-profiles/cover-expansion-joint-profiles(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=cover-expansion-joint-profiles&cat2=cover&name=DK200-01 [L,QSA]
+
+
+
+
+
+RewriteRule ^expansion-joint-profiles/auxiliaries(/?)$   /en/products/expansion-joint-profiles/coverex-pu-concrete-undercant.php [L,QSA]
+RewriteRule ^expansion-joint-profiles/auxiliaries/([0-9a-zA-Z-_]+)(/?)$   /en/products/expansion-joint-profiles/$1.php [L,QSA]
+
+
+
+RewriteRule ^expansion-joint-profiles/floor-expansion-joint-profiles/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=floor-expansion-joint-profiles&cat2=$1&name=$3 [L,QSA]
+RewriteRule ^expansion-joint-profiles/wall-expansion-joint-profiles/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=wall-expansion-joint-profiles&cat2=$1&name=$3 [L,QSA]
+
+
+
+# RewriteRule ^en/([0-9a-zA-Z-_]+)(/?)$$  /en/$1.php [L,QSA]
+
+
+
+
+#TR
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ([0-9a-zA-Z-_]+)(/?)$$  $1.php [L,QSA]
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

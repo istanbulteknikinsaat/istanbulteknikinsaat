@@ -1,0 +1,4 @@
+[04-May-2021 13:26:15 Europe/Istanbul] PHP Parse error:  syntax error, unexpected 'Başarısız' (T_STRING), expecting ',' or ';' in /home/u8360400/istanbulteknik.net/system/bizeyazin.php on line 7
+[04-May-2021 13:26:28 Europe/Istanbul] PHP Parse error:  syntax error, unexpected 'Başarısız' (T_STRING), expecting ',' or ';' in /home/u8360400/istanbulteknik.net/system/bizeyazin.php on line 7
+[18-May-2021 11:35:00 Europe/Istanbul] PHP Notice:  Undefined index: btelefon in /home/u8360400/istanbulteknik.net/system/bizeyazin.php on line 17
+[18-May-2021 11:46:04 Europe/Istanbul] PHP Notice:  Undefined index: btelefon in /home/u8360400/istanbulteknik.net/system/bizeyazin.php on line 17

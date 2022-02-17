@@ -1,0 +1,1036 @@
+/*------------------------------------------------------------------
+    File Name: custom.css
+-------------------------------------------------------------------*/
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+@font-face {
+    font-family: 'myFont-black';
+    src: url('fonts/DINPro-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myFont-bold';
+    src: url('fonts/DINPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myFont-light';
+    src: url('fonts/DINPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myFont-medium';
+    src: url('fonts/DINPro-Medium.ttf') format('truetype');
+}
+
+body {
+    font-family: 'myFont-medium', Fallback, sans-serif !important;
+}
+
+
+#main_xtext ol li {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#kategoriagaci {
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+#kategoriagaci li {
+    padding: 5px 20px;
+    font-size: 30px;
+    background: transparent;
+
+}
+
+.shortdesc p {
+    color: black;
+}
+
+img#apps,
+img#products,
+img#sectors {
+    opacity: 1;
+}
+
+.no-bckgrnd {
+    background: none !important;
+}
+
+.product_desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #505050;
+}
+
+.kategoriagacidiv {
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    /* display: none; */
+}
+
+.multi_language button.btn {
+    margin-bottom: 0px !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+#chooseRelate li {
+    display: inline-block;
+}
+
+.card {
+    display: block;
+}
+
+.card-body {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+    /* some CSS here */
+    label.tree-label {
+        font-size: unset;
+    }
+}
+
+.altkatcl {
+    right: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+#ilgiliurunler:hover {
+    text-decoration: underline !important;
+}
+
+.altkatstyle {
+    margin-left: 20px !important;
+    margin-top: 5px !important;
+}
+
+.urun-uygulamalari img {
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+#slider {
+    max-height: 575px;
+    width: 100%;
+    z-index: unset;
+}
+
+.urunuyg4 img,
+.urunuyg5 img,
+.urunuyg6 img {
+    margin-bottom: 0px;
+}
+
+#urunuyg {
+    color: #000000;
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#prodcat {
+    width: 100%;
+}
+
+label.altkategori {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.kutu {
+    border: 1px solid #000000;
+    background: #17a5e9;
+    text-align: center;
+    padding-top: 20px;
+}
+
+a.ilgiliurunler {
+    color: #000000;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#kutu1 {
+    width: 100%;
+    display: inherit;
+}
+
+#kutu1 a {
+    color: #ffffff !important;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+#chooseRelate img {
+    padding-left: 25px;
+}
+
+.catstyle2 h2 {
+    color: #17a5e9;
+    align-self: flex-end;
+}
+
+.square {
+    float: left;
+    background: url(../images/background.jpg) center center / cover;
+    position: relative;
+    width: 28%;
+    /* padding-bottom : 10%; = width for a 1:1 aspect ratio */
+    margin: 2.66%;
+    text-align: center;
+    font-size: 17px;
+    height: 70px;
+}
+
+.resim {
+    margin-top: 50px;
+}
+
+.content {
+    position: absolute;
+    height: 90%;
+    /* = 100% - 2*5% padding */
+    width: 90%;
+    /* = 100% - 2*5% padding */
+    padding: 5%;
+
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+    width: auto;
+    height: auto;
+    max-height: 90%;
+    max-width: 100%;
+    display: block;
+    position: relative;
+    font-weight: bold;
+}
+
+#more {
+    display: none;
+}
+
+.contact-form p {
+    text-align: center;
+    color: #505050;
+    font-size: 18px;
+    font-weight: 300;
+/*     font-family: 'Roboto-Light', Arial, serif
+ */}
+
+.contact-form .line {
+    width: 100%;
+    display: inline-block
+}
+
+.contact-form .column-half {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    padding-right: 30px
+}
+
+.contact-form .column-full {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding-right: 30px
+}
+
+.contact-form label {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    text-align: left
+}
+
+.contact-form input {
+    display: block;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 3px solid #f0f1f5;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    outline: 0
+}
+
+.contact-form input:focus {
+    border-bottom: 3px solid #117fe6
+}
+
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 3px solid #f0f1f5;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    outline: 0
+}
+
+.contact-form textarea.error {
+    border-bottom: 3px solid #f00
+}
+
+.contact-form label.error {
+    color: #f00
+}
+
+.contact-form input.error {
+    color: #f00;
+    border-bottom: 3px solid #f00
+}
+
+.contact-form textarea:focus {
+    border-bottom: 3px solid #117fe6
+}
+
+.contact-form a {
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+/*     font-family: 'Roboto-Regular', Arial, serif;
+ */    color: #FFF !important;
+    background-color: #505050;
+    padding: 25px 55px;
+    margin-top: 20px;
+    cursor: pointer
+}
+
+.contact-form a:hover {
+    background-color: #117fe6
+}
+
+.contact-form select {
+    height: 50px;
+    outline: 0;
+    display: block;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    margin-top: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 3px solid #f0f1f5
+}
+
+.contact-form select:focus {
+    border-bottom: 3px solid #117fe6
+}
+
+.contact-tabs {
+    width: 100%;
+    margin-top: 75px
+}
+
+.contact-tabs ul {
+    list-style: none;
+    list-style-type: none;
+    width: 100%
+}
+
+.contact-tabs ul li a {
+    float: left;
+    background-color: #FFF;
+    display: inline-block;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+    width: 33%;
+    margin-right: 1px;
+    font-size: 24px;
+    color: #5c5f61;
+    box-shadow: 7.778px 7.778px 57px 0 rgba(39, 44, 47, 0.08);
+    opacity: .9;
+    text-decoration: none;
+    height: 100px;
+}
+
+.contact-tabs ul li a.current {
+    box-shadow: 7.778px 7.778px 49px 0 rgba(39, 44, 47, 0.25);
+    color: #117fe6;
+    opacity: 1
+}
+
+#tab-1 {
+    display: block
+}
+
+#tab-2,
+#tab-3 {
+    display: none;
+}
+
+.seperator {
+    width: 100%;
+    height: 2px;
+    background-color: #f0f1f5;
+    display: inline-block;
+    margin-top: 65px;
+}
+
+.wrapper-ignore {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.addresses h2 {
+    font-size: 32px;
+    color: #117fe6;
+    font-weight: 300;
+/*     font-family: 'Roboto-Light', Arial, serif;
+ */    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.addresses ul li h5 {
+    color: #117fe6;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 23px;
+    margin-top: 23px;
+}
+
+.addresses ul li .label {
+    width: 95px;
+    float: left;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 400;
+/*     font-family: 'Roboto-Regular', Arial, serif;
+ */    color: #505050;
+    margin-bottom: 0;
+}
+
+.addresses ul li .desc {
+    width: 70%;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 300;
+/*     font-family: 'Roboto-Light', Arial, serif;
+ */    color: #505050;
+}
+
+.addresses ul li .label .double-dots {
+    float: right;
+    margin-right: 20px;
+}
+
+.contact-form-answer {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#iletisimform {
+    left: 100px;
+}
+
+#ref-map {
+    width: 100%;
+    display: block;
+    height: 480px;
+}
+
+.subpage-full-list {
+    display: inline-block !important;
+    padding-left: 0 !important;
+    /* margin-top: 10px !important; */
+    float: right;
+    width: 760px;
+}
+
+.collapseAll {
+    float: right;
+    position: relative;
+    display: block;
+    font-size: 20px;
+}
+
+#description p {
+    text-align: left;
+    font-size: 15px;
+    color: #505050;
+    line-height: 26px;
+    font-weight: 300;
+/*     font-family: 'Roboto-Light', Arial, serif;
+ */    width: 100%;
+    display: inline-block;
+}
+
+#description h3 {
+    text-align: left;
+    font-size: 20px;
+    color: #117fe6;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+    font-weight: 300;
+   /*  font-family: 'Roboto-Light', Arial, serif; */
+    float: right;
+    line-height: 44px;
+    width: 760px;
+}
+
+#description h4 {
+    text-align: left;
+    font-size: 18px;
+    color: #6e7379;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-weight: 400;
+/*     font-family: 'Roboto-Regular', Arial, serif;
+ */    line-height: 35px;
+    width: 100%;
+}
+.card-header{
+    height: 50px;
+}
+
+#accordionEx {
+    margin-bottom: 35px;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+#description li:before {
+    content: "" !important;
+    position: absolute !important;
+    top: 15px !important;
+    left: 5px !important;
+    width: 8px !important;
+    height: 8px !important;
+    background-image: url(../../images/bullets.gif) !important;
+}
+
+#description ul {
+    display: inline-block;
+    padding-left: 0;
+    /* margin-top: 10px; */
+    width: 100%;
+}
+
+.uygdetayurun {
+    min-height: auto;
+    border: 1px solid green;
+}
+
+.uygdetayurundiv {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#prodcat img {
+    width: 100%;
+    display: inline-block;
+}
+
+#description ul li {
+    position: relative;
+    list-style-type: none;
+    float: left;
+    font-size: 17px;
+    color: #505050;
+    width: 45%;
+    padding: 20px 20px 20px 20px;
+    margin-right: 5%;
+    border-bottom: 2px solid #f0f1f5;
+    line-height: 27px;
+    font-weight: 400;
+/*     font-family: 'Roboto-Light', Arial, serif;
+ */    margin-left:15px;
+}
+
+.urunuygdetail img {
+    width: 100% !important;
+}
+
+#description img {
+    text-align: left;
+    font-size: 18px;
+    color: #505050;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 26px;
+    font-weight: 300;
+/*     font-family: 'Roboto-Light', Arial, serif;
+ */    float: unset;
+    width: 500px;
+}
+
+.subpage-full-list li {
+    position: relative !important;
+    list-style-type: none !important;
+    float: left !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    width: 100% !important;
+    padding: 7px 20px 7px 30px !important;
+    margin-right: 5% !important;
+/*     border-bottom: 2px solid #f0f1f5 !important;
+ */    line-height: 27px !important;
+/*     font-family: 'Roboto-Light', Arial, serif;
+ */}
+
+#main_xtext h2 {
+    text-align: left;
+    font-size: 32px;
+    color: #117fe6;
+    margin-top: 55px;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-weight: 300;
+/*     font-family: 'Roboto-Light', Arial, serif;
+ */    line-height: 44px;
+    width: 100%;
+}
+
+#main_xtext p {
+    text-align: left;
+    font-size: 18px;
+    color: #505050;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 26px;
+    font-weight: 300;
+/*     font-family: 'Roboto-Light', Arial, serif;
+ */    width: 100%;
+}
+
+#main_xtext li {
+    position: relative;
+    list-style-type: none;
+    float: left;
+    font-size: 17px;
+    color: #505050;
+    width: 100%;
+    padding: 20px 20px 20px 30px;
+    margin-right: 5%;
+    border-bottom: 2px solid #f0f1f5;
+    line-height: 27px;
+}
+
+#main_xtext li:before {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    background-image: url(../../images/bullets.gif);
+}
+
+#main_xtext ul {
+    display: inline-block;
+    padding-left: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#main_xtext span.list-title {
+    font-size: 17px;
+    font-weight: 500;
+/*     font-family: 'Roboto-Medium', Arial, serif;
+ */    text-align: left;
+    color: #304ca0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: inline-block;
+    line-height: 44px;
+    width: 100%;
+}
+
+div#success {
+    text-align: center;
+    box-shadow: 1px 1px 5px #455644;
+    background: #bae8ba;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.inputBox {
+    width: 100%;
+    margin: 5px 0px 15px 0px;
+    border: #dedede 1px solid;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+#contact-popup {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    color: #676767;
+}
+
+.contact-form {
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+/*     font-family: Arial;
+ */    position: relative;
+    /* left: 50%; */
+    top: 50%;
+    /* margin-left: -210px; */
+    /* margin-top: -255px; */
+    box-shadow: 1px 1px 5px #444444;
+    padding: 20px 40px 40px 40px;
+}
+
+#contact-icon {
+    padding: 10px 5px 5px 12px;
+    width: 58px;
+    color: white;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 60px auto;
+}
+
+.info {
+    color: #d30a0a;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+#send {
+    background-color: #09F;
+    border: 1px solid #1398f1;
+/*     font-family: Arial;
+ */    color: white;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#contact-popup h1 {
+    font-weight: normal;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.input-error {
+    border: #e66262 1px solid;
+}
+
+h3.uygalan {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#urunuyg li {
+    padding: 5px 10px;
+    font-size: 15px;
+    background: transparent;
+
+}
+
+#urunuygulamalari img {
+    width: 50%;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#urunuyg a.ilgiliurunler {
+    color: #000000;
+    width: 100%;
+}
+
+@media screen and (max-width: 1260px) and (min-width: 960px) {
+    .addresses ul li .label {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+    /* some CSS here */
+    .urun-uygulamalari img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .multi_language form {
+        top: 0px !important;
+    }
+
+    .square {
+        width: 100%;
+        padding-bottom: unset;
+        margin-left: 0px;
+    }
+
+    #chooseRelate img {
+        padding-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content {
+        position: relative;
+    }
+
+    .footer-sektorler {
+        text-align: left;
+    }
+
+    .padding_layout_1 {
+        padding-top: 50px;
+    }
+
+    .kutu {
+        height: 50px;
+        padding-top: 9px;
+    }
+
+    .kutu a {
+        font-size: 14px;
+    }
+
+    .kutu2 {
+        height: unset;
+    }
+
+    li#altkategoriagaci {
+        padding: 3px 0px;
+    }
+
+    li#altkategoriagaci {
+        text-align: center;
+    }
+
+    #kutu1 {
+        display: inline-block;
+    }
+
+    #description h3,
+    #description h4,
+    #description p,
+    ul.subpage-full-list li {
+        width: 100% !important;
+        padding: 0px 0px !important;
+        margin: 0px 0px !important;
+        left: 0px !important;
+        right: 0px !important;
+    }
+
+    #description li:before {
+        content: unset !important;
+    }
+
+    #description ul {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        left: unset;
+        margin-left: unset;
+        left: unset;
+        top: unset;
+        margin-top: unset;
+
+    }
+
+    .contact-tabs ul li a {
+        font-size: 15px;
+    }
+
+    #iletisimform {
+        left: unset;
+    }
+
+    #main_xtext h2 {
+        margin-top: 0px;
+    }
+
+    #description ul li {
+        position: relative;
+        list-style-type: none;
+        float: left;
+        font-size: 17px;
+        color: #505050;
+        width: 100%;
+        padding: 20px 20px 20px 30px;
+        margin-right: 5%;
+/*         border-bottom: 2px solid #f0f1f5;
+ */        line-height: 27px;
+    }
+
+    #description ul li:before {
+        content: "";
+        position: absolute;
+        top: 29px;
+        left: 5px;
+        width: 8px;
+        height: 8px;
+        background-image: url(../../images/bullets.gif);
+    }
+
+    #description ul {
+        display: inline-block;
+        padding-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .contact-tabs {
+        margin-top: unset;
+    }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #navbar_menu li a {
+        font-size: 10px;
+    }
+
+    .urun-uygulamalari img {
+        width: 100%;
+    }
+
+    #chooseRelate img {
+        padding-left: 0;
+    }
+
+    .square {
+        width: 100%;
+        padding-bottom: unset;
+    }
+
+    .footer-sektorler {
+        text-align: left;
+    }
+
+    .padding_layout_1 {
+        padding-top: 50px;
+    }
+
+    .content {
+        position: relative;
+        padding: unset;
+    }
+
+    .right_section_header_top {
+        text-align: right;
+        right: 50px;
+    }
+
+    #kutu1,
+    .kutu2 {
+        height: auto;
+    }
+
+    .side_bar_blog {
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    #urunuyg {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .ztree li a {
+        font-size: 15px;
+    }
+
+    #description {
+        display: inline-block;
+    }
+
+    #description ul {
+        width: auto;
+    }
+
+    #description ul li {
+        float: unset;
+        margin-right: unset;
+        width: 100%;
+    }
+
+    #description h3 {
+        width: 100%;
+        display: block;
+        margin-top: unset;
+    }
+
+    #description h4 {
+        width: 100%;
+    }
+
+    #description p {
+        width: unset;
+    }
+
+    #contact-form-email,
+    #contact-form-bayi,
+    #contact-form-musteri {
+        left: unset;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: unset;
+    }
+
+    .contact-tabs ul li a {
+        font-size: 17px;
+    }
+
+    .contact-tabs {
+        margin-top: unset;
+    }
+
+    #kutu1 {
+        display: inline-block;
+    }
+
+}

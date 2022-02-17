@@ -1,0 +1,208 @@
+.product-navigation {
+   display: none;
+}
+.pdf-indir-btn {
+    display: none;
+}
+#navbar {
+       display: none;
+}
+header {
+    display: none;
+}
+.main-nav {
+    display: none;
+}
+.product-buy {
+    display: none;
+}
+footer {
+    display: none;
+}
+.product-dilatasyon-details-header {
+    display: none;
+}
+.product-dilatasyon-details-header-teknik {
+    display: none;
+}
+
+.breadcrumb {
+    display: none;
+}
+body {
+   padding: 0;
+   margin: 0;
+}
+
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+}
+.wrapper-ignore {
+    width: 100%;
+    margin: 0;
+}
+
+.product-page {
+    border: 1px solid #2C4046;
+    margin: 17px; 
+    width: 95.7%;
+   height: 100%;
+ 
+
+}
+
+
+
+.product-page>.wrapper>p {
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+.product-page>.wrapper>img {
+    float: left;
+    width: 100%;
+/*    display: none;*/
+}
+
+
+.product-page>.wrapper h3 {
+    display: none;
+}
+
+
+.product-page>.wrapper h4 {
+    float: left;
+    width: 100%;
+}
+
+.product-page>.wrapper>ul {
+    width: 100%;
+   
+    float: left;
+
+}
+.widetable {
+    margin-top: 40px;
+    margin-bottom: 37px;
+    text-align: center;
+    float: none;
+    width: 100%;
+
+
+}
+
+.widetable>table {
+
+    float: none;
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+
+
+}
+
+
+.product-page>.wrapper-ignore>.features {
+     width: 100%;
+   
+    float: none;
+}
+
+
+
+
+
+table {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+se;
+}
+
+th {
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 11px;
+}
+
+tbody tr td {
+    font-size: 11px;
+    font-weight: 300;
+    color: #727f89;
+    text-align: center;
+        text-align: center;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+th,
+td {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+td {
+    text-align: center;
+
+}
+
+.dilatasyon-print-header {
+    background-color: #FFF;
+    width: 100%;
+    height: 120px;
+    display: inline-block;
+}
+.dilatasyon-print-header>h2 {
+    float: left;
+  
+    font-size: 23px;
+    color: #515151;
+    margin-top: 53px;
+    margin-left: 263px;
+    font-weight: 800;
+          display: inline-block;
+          width: 500px;
+}
+.dilatasyon-print-header>h7 {
+    font-size: 18px;
+    color: #162135;
+    font-weight: 300;
+      margin-left: 50px;
+      padding-top: 10px;
+      display: inline-block;
+      float: left;
+         width: 500px;
+}
+.svg-print-image {
+    display: inline-block;
+    height: 650px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.disi-logo {
+
+    position: absolute;
+    right: 60px;
+    top: 60px;
+
+    height: 63px;
+        width:150px;
+  
+}
+
+.coverex-logo {
+    display: inline-block;
+    width: 200px;
+    margin-left: 0;
+    position: absolute;
+    left: 70px;
+    top: 60px;
+}

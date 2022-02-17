@@ -1,0 +1,230 @@
+
+AddType text/x-component .htc
+# Yönlendirmeleri aktif eder
+Options +FollowSymLinks
+RewriteEngine on
+directoryindex index.php  
+
+
+
+AddDefaultCharset utf-8
+<IfModule mod_deflate.c>
+<IfModule mod_setenvif.c>
+<IfModule mod_headers.c>
+	Header set Connection keep-alive 
+	SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+	RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+</IfModule>
+
+
+# Apache eski sürümler için
+<IfModule !mod_filter.c>
+	# AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+		AddOutputFilterByType DEFLATE text/html text/plain application/json
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE application/x-javascript
+	AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+	AddOutputFilterByType DEFLATE application/xhtml+xml application/rss+xml application/atom+xml
+	AddOutputFilterByType DEFLATE image/x-icon image/svg+xml image/png image/jpg application/vnd.ms-fontobject application/x-font-ttf application/x-font-woff font/opentype
+
+	# Add correct content-type for fonts
+	AddType application/vnd.ms-fontobject .eot
+	AddType application/x-font-ttf .ttf
+	AddType application/x-font-opentype .otf
+	AddType application/x-font-woff .woff
+	AddType image/svg+xml .svg
+
+	# Compress compressible fonts
+	AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
+</IfModule>
+
+</IfModule>
+
+
+		# EXPIRES CACHING ##
+		<IfModule mod_expires.c>
+		    ExpiresActive On    
+		      ExpiresByType text/cache-manifest "Access plus 1 days"
+		        ExpiresByType text/html "Access plus 1 days"
+
+
+			ExpiresByType font/opentype "Access plus 1 days"
+		    ExpiresByType font/truetype "access plus 1 days"
+			ExpiresByType image/svg+xml "Access plus 1 days"
+			ExpiresByType image/jpg "Access plus 1 days"
+			ExpiresByType image/jpeg "access plus 1 days"
+			ExpiresByType image/gif "access plus 1 days"
+			ExpiresByType image/png "access plus 5 days"
+			ExpiresByType text/x-javascript "access plus 1 days"
+			ExpiresByType image/x-icon "access plus 1 days"
+			# ExpiresByType text/css "access plus 1 days"
+			ExpiresByType text/xml "access plus 1 days"
+		    ExpiresByType text/javascript  "access plus 1 days"
+			ExpiresByType application/x-shockwave-flash "access plus 1 days"
+			ExpiresByType application/pdf "access plus 1 days"
+			ExpiresByType application/x-font-opentype "access plus 1 days"
+			ExpiresByType application/vnd.ms-fontobject "Access plus 1 days"
+			ExpiresByType application/x-font-woff "Access plus 1 days"
+			ExpiresByType application/x-javascript "access plus 1 days"
+			ExpiresByType application/x-font-ttf "Access plus 1 days"
+			ExpiresByType application/x-font-woff "access plus 1 days"
+		  ExpiresByType application/xml "access plus 1 days"
+		  ExpiresByType application/json "access plus 1 days"
+
+
+			ExpiresDefault "access plus 1 days"
+		</IfModule>
+
+
+
+
+
+
+
+
+# EXPIRES CACHING ##
+<IfModule mod_headers.c>
+# Proksi Gecerli
+ Header append Cache-Control "public"
+Header append Vary User-Agent env=!dont-vary
+# Web Sayfasi Dosyalari
+# <filesmatch ".(css|js|woff|ttf|otf|eot)$">
+<filesmatch ".(js|woff|ttf|otf|eot)$">
+Header set Cache-Control "max-age=604800, public"
+</filesmatch>
+# Resimler
+<filesmatch ".(jpg|jpeg|gif|png|ico)$">
+Header set Cache-Control "max-age=604800, public"
+</filesmatch>
+# Sayfalar
+<filesmatch ".(html|htm)$">
+Header set Cache-Control "max-age=86400, public, must-revalidate"
+</filesmatch>
+# Belgeler ve Dokuman
+<filesmatch ".(pdf|ppt|doc|docx|xls)$">
+Header set Cache-Control "max-age=86400, public"
+</filesmatch>
+# Medya Icerikleri
+<filesmatch ".(mpeg|swf|flv|mov|mp3|wmv)$">
+Header set Cache-Control "max-age=86400, public"
+</filesmatch>
+</IfModule>
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond ${REQUEST_URI} ^.+$
+RewriteCond %{REQUEST_FILENAME} \.(gif|jpe?g|png|js|css|swf|php|ico|txt|pdf|xml|svg)$ [OR]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -l
+RewriteRule ^ - [L]
+
+
+
+
+RewriteRule ^system/([0-9a-zA-Z-_]+)(/?)$ /en/system/$1.php [L,QSA]
+
+
+
+
+################################################
+################################################
+#### ENGLISH ###################################
+################################################
+################################################
+
+# RewriteRule default.asp /en/index.php  [R=301,L]
+# RewriteRule Urunlerimiz.aspx /en/Urunlerimiz.php?id=$1  [R=301,L,QSA]
+# RewriteRule Hakkimizda.aspx /en/about  [R=301,L]
+# RewriteRule Iletisim.aspx /en/contact  [R=301,L]
+# RewriteRule Referanslar.aspx /en/references  [R=301,L]
+# RewriteRule IletisimFormu.aspx /en/contact  [R=301,L]
+# RewriteRule BayiBasvuruFormu.aspx /en/contact  [R=301,L]
+# RewriteRule UrunDetay.aspx /en/UrunDetay.php?id=$1  [R=301,L,QSA]
+# RewriteRule Kariyer.aspx /en/contact  [R=301,L]
+# RewriteRule Haberler.aspx /en/Haberler.php?Tip=$1  [R=301,L,QSA]
+# RewriteRule Kataloglar.aspx /en/index.php  [R=301,L]
+# RewriteRule Urunler.aspx /en/Urunler.php?id=$1  [R=301,L,QSA]
+# RewriteRule Cozumlerimiz.aspx /en/references  [R=301,L]
+# RewriteRule Urunlerimiz.aspx /en/Urunlerimiz.php?id=$1  [R=301,L,QSA]
+# RewriteRule Markalar.aspx /en/Markalar.php?id=$1  [R=301,L,QSA]
+# RewriteRule Departman.aspx /en/about  [R=301,L]
+# RewriteRule MaliTablolar.aspx /en/about  [R=301,L]
+# RewriteRule HaberDetay.aspx /en/HaberDetay.php?id=$1  [R=301,L,QSA]
+# RewriteRule TeklifIstiyorumFormu.aspx /en/contact  [R=301,L]
+# RewriteRule Sayfa.aspx /en/Sayfa.php?url=$1  [R=301,L,QSA]
+# RewriteRule Uygulamalar.aspx /en/index.php  [R=301,L]
+
+RewriteRule ^news/coverex-expansion-joint-profiles-are-at-vodafone-arena-istanbul  /news/coverex-expansion-joint-profiles-are-at-vodafone-stadium-istanbul  [R=301,L,QSA]
+
+
+RewriteRule ^news/([0-9a-zA-Z-_]+)(/?)$$  /en/news-detail.php?newsid=$1 [L,QSA]
+RewriteRule ^news  /en/all-news.php [L,QSA]
+
+
+RewriteRule ^geosynthetics/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/geosynthetics/$1/$2.php [L,QSA]
+RewriteRule ^insulation-products/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/insulation-products/$1/$2.php [L,QSA]
+RewriteRule ^insulation-products/drainage-board/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/insulation-products/drainage-board/$1/$2.php [L,QSA]
+RewriteRule ^insulation-products/insulating-products/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/insulation-products/insulating-products/$1/$2.php [L,QSA]
+RewriteRule ^insulation-products/roof-and-facade-underlays/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/insulation-products/roof-and-facade-underlays/$1/$2.php [L,QSA]
+RewriteRule ^geogreen-green-roof-systems/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/geogreen-green-roof-systems/$1/$2.php [L,QSA]
+RewriteRule ^asphalt-products/([0-9a-zA-Z-_]+)(/?)$$  /en/products/asphalt-products/$1.php [L,QSA]
+RewriteRule ^concrete-products/([0-9a-zA-Z-_]+)(/?)$$  /en/products/concrete-products/$1.php [L,QSA]
+RewriteRule ^marble-products/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$$  /en/products/marble-products/$1/$2.php [L,QSA]
+
+
+
+RewriteRule ^system/([0-9a-zA-Z-_]+)(/?)$ /en/system/$1.php [L,QSA]
+
+
+
+RewriteRule ^expansion-joint-profiles/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=$1&cat2=$2&name=$3 [L,QSA]
+RewriteRule ^expansion-joint-profiles/floor-expansion-joint-profiles(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=floor-expansion-joint-profiles&cat2=flush-mounted&name=ZA040-3070 [L,QSA]
+RewriteRule ^expansion-joint-profiles/wall-expansion-joint-profiles(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=wall-expansion-joint-profiles&cat2=flush-mounted&name=DA020-3015 [L,QSA]
+RewriteRule ^expansion-joint-profiles/cover-expansion-joint-profiles(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=cover-expansion-joint-profiles&cat2=cover&name=DK200-01 [L,QSA]
+
+
+
+
+
+RewriteRule ^expansion-joint-profiles/auxiliaries(/?)$   /en/products/expansion-joint-profiles/coverex-pu-concrete-undercant.php [L,QSA]
+RewriteRule ^expansion-joint-profiles/auxiliaries/([0-9a-zA-Z-_]+)(/?)$   /en/products/expansion-joint-profiles/$1.php [L,QSA]
+
+
+
+RewriteRule ^expansion-joint-profiles/floor-expansion-joint-profiles/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=floor-expansion-joint-profiles&cat2=$1&name=$3 [L,QSA]
+RewriteRule ^expansion-joint-profiles/wall-expansion-joint-profiles/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$  /en/products/expansion-joint-profiles/expansion-joint.php?cat1=wall-expansion-joint-profiles&cat2=$1&name=$3 [L,QSA]
+
+
+
+# RewriteRule ^en/([0-9a-zA-Z-_]+)(/?)$$  /en/$1.php [L,QSA]
+
+
+
+
+#TR
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ([0-9a-zA-Z-_]+)(/?)$$  $1.php [L,QSA]
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
