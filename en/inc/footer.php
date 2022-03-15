@@ -134,6 +134,7 @@
                 B Block K. 30<br>
                 Esenler, Istanbul<br>
                 <i class="fa fa-phone" aria-hidden="true"></i> <span style="font-size:18px;"><a href="tel:+902124381808">+90 212 438 18 08</a></span><br>
+                <i class="fab fa-whatsapp" style="color:#039ee3; margin-right:8px; font-size:17px; font-weight:bold;" aria-hidden="true"></i> <span style="font-size:18px;"><a href="https://wa.me/905305229896">+90 530 522 98 96</a></span><br>
                 <i class="fa fa-envelope" aria-hidden="true"></i>info@istanbulteknik.com</p>
                 <div class="widget widget_socials" style="margin-top: 20px;">
                     <div class="socials">

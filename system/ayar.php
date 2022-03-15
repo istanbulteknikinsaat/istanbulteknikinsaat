@@ -4,7 +4,7 @@ try {
 
     $user 	= GetInfo();
     $ip		= $user['ip'];
-    $db = new PDO('mysql:host=localhost;dbname=istanbulteknik;charset=utf8', 'root', '');
+    $db = new PDO('mysql:host=localhost;dbname=istanbulcom3;charset=utf8', 'root', '');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     $db->setAttribute(PDO::ATTR_ORACLE_NULLS, PDO::NULL_TO_STRING);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

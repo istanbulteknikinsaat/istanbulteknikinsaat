@@ -133,6 +133,9 @@ footer p{
   div#googleMap {
     height: 400px !important;
 }}
+ a {
+   color:#4b4e51 !important;
+ }
 </style>
         <section class="breadcrumb-wrap">
             <div class="container">
@@ -200,6 +203,7 @@ footer p{
                                     <ul class="information-list">
                                         <li>Adres: Tekstilkent Koza Plaza B Blok K:30 34235 Esenler/İSTANBUL</li>
                                         <li>Telefon: 0212 438 18 08</li>
+                                        <li><a href="https://wa.me/905305229896">Whatsapp: 0530 522 98 96  <i class="fab fa-whatsapp"></i></a></li>
                                         <li>Fax: 0212 438 18 01</li>
                                         <li>Email: bilgi@istanbulteknik.com</li>
                                     </ul>
@@ -691,7 +695,6 @@ footer p{
             url: "/system/service.php",
             success: function(x) {
                 console.log("başarılı");
-                
             },
             error: function(x) {
                 if (v == "mailgonder") {

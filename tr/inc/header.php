@@ -112,6 +112,8 @@ setcookie("cookies", $_SESSION['ipadres'],time()+3600); */
                         title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     <li><a class="fab fa-instagram-i" href="https://www.instagram.com/istanbulteknikinsaat/"
                         title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="fab fa-whatsapp-i" href="https://wa.me/905305229896"
+                        title="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                     <li>bilgi@istanbulteknik.com</li>   
                   </ul>
                 </div>
